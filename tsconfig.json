@@ -11,8 +11,7 @@
     "rootDir": "./src",
     "strict": true,
     "esModuleInterop": true,
-    "noEmitOnError": true,
-    "watch": true
+    "noEmitOnError": true
   },
   "exclude": ["node_modules", "dist", ".vscode"]
 }

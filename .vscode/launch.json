@@ -5,7 +5,7 @@
       "type": "node",
       "request": "launch",
       "name": "Launch Program",
-      // "preLaunchTask": "tsc",
+      "preLaunchTask": "tsc",
       "program": "${workspaceFolder}/src/app.ts",
       "outFiles": ["${workspaceFolder}/dist/**/*.js"],
       "sourceMaps": true

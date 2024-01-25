@@ -10,16 +10,14 @@ const checkJwt = auth({
 const app = express();
 const port = 4000;
 
-app.use(cors());
-
-app.get("/", checkJwt, (_req, res) => {
-  res.send("Hello You!");
-});
-
-app.get("/other", (_req, res) => {
-  res.send("Hello Other!");
-});
-
-app.listen(port, () => {
-  return console.log(`Express is listening at http://localhost:${port}`);
-});
+app
+  .use(cors())
+  .get("/", checkJwt, (_req, res) => {
+    res.send("Hello You!");
+  })
+  .get("/other", (_req, res) => {
+    res.send("Hello Other!");
+  })
+  .listen(port, () => {
+    return console.log(`Express is listening at http://localhost:${port}`);
+  });
