@@ -13,7 +13,7 @@ const port = 4000;
 app
   .use(cors())
   .get("/", checkJwt, (_req, res) => {
-    res.send("Hello You!");
+    res.send("Hello Node!");
   })
   .get("/other", (_req, res) => {
     res.send("Hello Other!");
